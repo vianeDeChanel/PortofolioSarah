@@ -1,23 +1,23 @@
 [
 	{
-		"dates": "June 2018 · Present",
-		"role": "Front-end Engineer",
-		"company": "Full Truck Alliance",
-		"description": "Responsible for customer service and CRM system front-end development.",
-		"logo": "/assets/images/experiences/fta.ico"
+		"dates": "Octobre 2022 · Présent",
+		"role": "Prépa et Master 1 ",
+		"company": "Hetic",
+		"description": "Développement web et communication digitale.",
+		"logo": "https://www.hetic.net/sites/all/themes/hetic_v7/img/svg/logo_hetic.svg"
 	},
 	{
-		"dates": "July 2015 · June 2018",
-		"role": "Front-end Engineer",
-		"company": "YOHO!",
-		"description": "Responsible for mobile front-end development of e-commerce platform.",
-		"logo": "/assets/images/experiences/yoho.ico"
+		"dates": "Juin 2024 · Présent",
+		"role": "Consultante en freelance",
+		"company": "Clev Consuling",
+		"description": "Responsable de la communication digital de la plateforme Digiclev.",
+		"logo": "/assets/images/experiences/digiclev.png"
 	},
 	{
-		"dates": "September 2014 · July 2015 ",
-		"role": "Node.JS Developer",
-		"company": "WuLian",
-		"description": "Intern, involved in the development of Internet of Things cloud systems.",
-		"logo": "/assets/images/experiences/wulian.ico"
+		"dates": " 2018 · Présent ",
+		"role": "Fondatrice et présidente",
+		"company": "BB_NUMERIQUE",
+		"description": "J’ai créée en 2018 une association nommée BB_Numérique, qui a pour but de former les jeunes aux métiers du numérique.",
+		"logo": "/assets/images/experiences/gbbn-02.png"
 	}
 ]

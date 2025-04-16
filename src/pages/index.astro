@@ -6,7 +6,7 @@ import Writings from "../components/home/writings.astro";
 import Layout from "../layouts/main.astro";
 ---
 
-<Layout title="Kai">
+<Layout title="LKS">
   <div
     class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
   >
@@ -15,30 +15,40 @@ import Layout from "../layouts/main.astro";
         <h1
           class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
         >
-          Hello, I'm Kai.
+          Bonjour, Je suis Lukunku K. Sarah.
         </h1>
         <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          I'm a front-end programmer living in Nanjing. <br
+          Je suis développeuse Web Full stack, et Cheffe de projet digital<br
             class="hidden lg:block"
-          />I focus on Web development.
+          />j’ai 6 ans d’expérience
+          en tant que développeuse Full Stack. Passiobnnée d’informatique et
+          polyvalente, je maitrise toutes les étapes de la création de sites et
+          d’applications web, de la compréhension des besoins utilisateurs au
+          développement frontend et backend, jusqu’à la maintenance
         </p>
-        <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
-          I can help you out with:
-        </p>
+        <!--<p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
+          Mes compétences :
+        </p>-->
+
         <ul
-          class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
-        >
-          <li>Vue.js Development</li>
-          <li>React.js Development</li>
-          <li>Node.js Development</li>
-          <li>Website Design</li>
-          <li>and more...</li>
-        </ul>
-        <Button text="Follow me on 𝕏" link="https://twitter.com/0xKaiBi" />
+          class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400">
+          <ol class="spiral">
+            <li class="sun">HTML</li>
+            <li class="mercury"></li>
+            <li class="venus">CSS</li>
+            <li class="earth">Website Design UX-UI</li>
+            <li class="mars">JAVASCRIPT</li>
+            <li class="jupiter">SQL et PHP</li>
+            <li class="saturn">PYTHON</li>
+            <li class="uranus">WINDEV/WEBDEV</li>
+            <li class="neptune"></li>
+          </ol>
+        </ul> 
       </div>
-      <div
+       <div
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
       >
+      
         <div class="relative z-50 w-full">
           <div
             class="absolute bottom-0 z-40 w-16 h-16 -translate-x-6 -translate-y-1/2 lg:top-auto top-0 lg:-translate-y-[330px] rounded-full"
@@ -64,13 +74,27 @@ import Layout from "../layouts/main.astro";
             class="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"
           >
           </div>
+          <div
+            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 lg:translate-y-0 rounded-full z-40"
+          >
+            <Button
+              class="inline-block px-4 py-2 bg-blue-500 text-white rounded-full text-center"
+              text="Suivez moi sur Linkedin"
+              link="https://www.linkedin.com/in/sarah-lukunku-kibila/"
+            />
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 
-  <Separator text="Check out my projects" />
+  <div>
+    <Separator class=".separator-text" text="DEVELOPPEMENT WEB" />
+  </div>
+  
+  
   <Projects />
-  <Separator text="Some of my writing" />
+  <Separator text="CREATION DES CONTENUS" />
   <Writings />
 </Layout>

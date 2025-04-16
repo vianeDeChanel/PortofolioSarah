@@ -3,29 +3,44 @@ import experiences from "../collections/experiences.json";
 import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
+import SkillsOrbit from "../components/skills-orbit.astro";
+
 ---
 
-<Layout title="About Me">
+<Layout title="Profil">
   <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
     <PageHeading
-      title="About Me"
-      description="Hello 👋 I'm a frontend engineer from Nanjing, China. I'm passionate about building new products and learning new technology."
+      title="Experte en développement web et Communication digitale "
+      description="Bonjour 👋 j'ai le plaisir de faire votre connaissance."
     />
 
     <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
 
-    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Short Bio</h2>
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Biographie</h2>
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-      Front-end cutter 🧑🏻‍💻, back-end amateur 🤷🏻‍♂️, operations digging holes person 🤦🏻‍♂️.
+    Je suis en recherche d’une alternance de niveau Master 1 en
+    Développement full stack ou en gestion de Projet. j’ai 6 ans d’expérience
+    en tant que développeuse Full Stack. Passiobnnée d’informatique et
+    polyvalente, je maitrise toutes les étapes de la création de sites et
+    d’applications web, de la compréhension des besoins utilisateurs au
+    développement frontend et backend, jusqu’à la maintenance. J’ai créée
+    en 2018 une association nommée BB_Numérique, qui a pour but de
+    former les jeunes aux métiers du numérique, parceque j’avais constaté
+    que c’était un besoin urgent et je voulu répondre avec mes moyens
+      <br>Front-end experte 🧑🏻‍💻, back-end expert 🤷🏻‍♂️, créatrice et innovatrice 🤦🏻‍♂️.
     </p>
 
     <h2
       class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
     >
-      Experience
+      Mon parcours
     </h2>
+    <!-- Cercle des compétences tournant -->
+    <div class="z-20 mt-10">
+     <SkillsOrbit />
+  </div>
     <div class="px-5 py-10">
       {
         experiences.map((experience, loop) => {
@@ -56,17 +71,18 @@ import Layout from "../layouts/main.astro";
       }
     </div>
 
-    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Let's Connect</h2>
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Allons-y, entrons en contact !</h2>
     <p
       class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
     >
-      If you want to stay up to date with my work be sure to <a
-        href="https://twitter.com/ccikai"
+    Vous pouvez jeter un coup d'œil à mon CV <a
+        href="#"
         target="_blank"
-        class="text-indigo-600 underline">follow me on twitter</a
-      >, or you can send me an <a href="mailto:astro-aria#miantiao.me" class="text-indigo-600 underline"
-        >email</a
-      > and I'll be sure to get back to you.
+        class="text-indigo-600 underline">Téléchargez mon CV [ici]</a
+      >, ou laissez-moi un mail à l'adresse <a href="mailto:lukunkusarahkert@gmail.com" class="text-indigo-600 underline"
+        >lukunkusarahkert@gmail.com</a
+      > <br>Merci et à très bientôt !
     </p>
+    
   </section>
 </Layout>

@@ -1,0 +1,59 @@
+---
+const skills = [
+  { name: "HTML", orbit: "orbit-1" },
+  { name: "CSS", orbit: "orbit-2" },
+  { name: "JavaScript", orbit: "orbit-3" },
+  { name: "UX/UI", orbit: "orbit-4" },
+  { name: "SQL", orbit: "orbit-5" },
+  { name: "PHP", orbit: "orbit-6" },
+  { name: "Python", orbit: "orbit-7" },
+  { name: "WinDev", orbit: "orbit-8" },
+];
+---
+
+<div class="relative w-[400px] h-[400px] mx-auto my-10">
+  <!-- Centre -->
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+              bg-indigo-600 text-white px-6 py-3 rounded-full shadow-lg text-sm font-semibold z-10">
+    Full Stack
+  </div>
+
+  <!-- Orbits -->
+  {skills.map((skill, index) => (
+    <div class={`absolute top-1/2 left-1/2 animate-spin-${index + 1} ${skill.orbit}`}>
+      <div class="absolute w-8 h-8 bg-indigo-300 text-white rounded-full flex items-center justify-center 
+                  text-[10px] font-bold shadow transform -translate-x-1/2 -translate-y-1/2">
+        {skill.name}
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  .orbit-1 { transform: translate(-50%, -50%) rotate(0deg) translateX(70px); }
+  .orbit-2 { transform: translate(-50%, -50%) rotate(45deg) translateX(90px); }
+  .orbit-3 { transform: translate(-50%, -50%) rotate(90deg) translateX(110px); }
+  .orbit-4 { transform: translate(-50%, -50%) rotate(135deg) translateX(130px); }
+  .orbit-5 { transform: translate(-50%, -50%) rotate(180deg) translateX(150px); }
+  .orbit-6 { transform: translate(-50%, -50%) rotate(225deg) translateX(170px); }
+  .orbit-7 { transform: translate(-50%, -50%) rotate(270deg) translateX(190px); }
+  .orbit-8 { transform: translate(-50%, -50%) rotate(315deg) translateX(210px); }
+
+  @keyframes spin-1 { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  @keyframes spin-2 { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+  @keyframes spin-3 { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  @keyframes spin-4 { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+  @keyframes spin-5 { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  @keyframes spin-6 { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+  @keyframes spin-7 { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  @keyframes spin-8 { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+
+  .animate-spin-1 { animation: spin-1 25s linear infinite; }
+  .animate-spin-2 { animation: spin-2 22s linear infinite; }
+  .animate-spin-3 { animation: spin-3 20s linear infinite; }
+  .animate-spin-4 { animation: spin-4 18s linear infinite; }
+  .animate-spin-5 { animation: spin-5 16s linear infinite; }
+  .animate-spin-6 { animation: spin-6 14s linear infinite; }
+  .animate-spin-7 { animation: spin-7 12s linear infinite; }
+  .animate-spin-8 { animation: spin-8 10s linear infinite; }
+</style>

@@ -1,20 +1,21 @@
 [
 	{
-		"name": "Email.ML",
-		"description": "Minimalist temporary Email.",
+		"name": "Réfonte du site web",
+		"description": "Refaire le site web de l'Institut Français de Pointe-Noire",
 		"image": "/assets/images/projects/email.ml.png",
-		"url": "https://email.ml"
+		"url": "https://www.ifc-pointenoire.com/"
 	},
 	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
+		"name": "Cheffe de projet digital",
+		"description": "Accompagnement et gestion des comptes média sociaux d'Elite Training",
 		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
+		"url": "https://www.facebook.com/elitetrainingci"
 	},
 	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
+		"name": "Coordinatrice de projets digitaux",
+		"description": "Consultante en Manager et gestionnaire des projets chez DIGICLEV",
+		"image": "/assets/images/projects/digiclev.png",
+		"url": "https://www.facebook.com/Digiclevofficiel"
 	}
+	
 ]
